@@ -23,16 +23,21 @@ public class SparkWebApp {
         String pageContent
                 = "<!DOCTYPE html>"
                 + "<html>"
+                +"<head>"
+                +"<link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" rel=\"stylesheet\"" 
+                +"integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">" 
+                +"</head>"
                 + "<body>"
                 + "<h2>Calculate mean and standard desviation</h2>"
                 + "<form action=\"/results\">"
                 + "  Enter the data with a space between them :<br>"
                 + "  <br>"
-                + "  <input type=\"text\" name=\"data\" value=\"5 5 5\">"
-                + "  <br><br>"
-                + "  <input type=\"submit\" value=\"Calculate\">"
+                + "  <textarea class=\"form-control\" name=\"data\" placeholder=\"5 5 5\">5 5 5 </textarea>"
+                + "  <br>"
+                + "  <button class= \"btn btn-outline-primary\" type=\"submit\">Calculate</button>"
                 + "</form>"
-                + "<p>If you click the \"Submit\" button, the form-data will be sent to a page called \"/results\".</p>"
+                +" <br>"
+                + "<p><i>If you click the \"Calculate\" button, the form-data will be sent to a page called \"/results\".</i></p>"
                 + "</body>"
                 + "</html>";
         return pageContent;
@@ -45,7 +50,7 @@ public class SparkWebApp {
 	for (int i=0;i<l.length;i++){
             list.insert(list, Double.parseDouble(l[i]));
         }	
-        return "The mean is: "+ app.mean(list) + " and the standard desviation is: " +
-               app.standardDesviation(list);
+        return " <h1>The mean is: "+ app.mean(list) + " and the standard desviation is: " +
+               app.standardDesviation(list)+"</h1>";
     }
 }
