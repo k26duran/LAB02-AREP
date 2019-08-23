@@ -1,4 +1,4 @@
-# LABORATORIO 2: INTRODUCCIÓN AL DISEÑO DE SISTEMAS INFORMÁTICOS
+﻿# LABORATORIO 2: INTRODUCCIÓN AL DISEÑO DE SISTEMAS INFORMÁTICOS
 
 Programa desarrollado en Java, tiene como objetivo hallar la media y la desviación estandar de una lista de números.
 
@@ -12,7 +12,7 @@ Programa desarrollado en Java, tiene como objetivo hallar la media y la desviaci
 
 ### Arquitectura
 
-![]()
+![](https://github.com/k26duran/LAB02-AREP/blob/master/modelo.PNG)
 
 ## Ejecutar
 ### Descagar el proyecto, sus dependencias y compilar
