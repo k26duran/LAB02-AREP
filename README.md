@@ -11,8 +11,10 @@ Programa desarrollado en Java, tiene como objetivo hallar la media y la desviaci
 * Git
 
 ### Arquitectura
-
+#### Diagrama de Clases
 ![](https://github.com/k26duran/LAB02-AREP/blob/master/modelo.PNG)
+#### Diagrama de Componentes
+![](https://github.com/k26duran/LAB02-AREP/blob/master/Componentes.PNG)
 
 ## Ejecutar
 ### Descagar el proyecto, sus dependencias y compilar
